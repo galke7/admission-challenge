@@ -41,7 +41,7 @@ EuyAZmibvQZTsrnVejaV83iBSmR8AktWCNlQk1LZGd6OSk8wHWZbQ5GgXggK5K5mvhkXXi
 0tr9xr7gpEY7hTyz1lgWDEqCp8nb1OjvqQQ5ItRtefn4VitEMUXABevBrFRF0ndsYjjI+I
 3PbvzT1/s34PRdhcG+QQ8iRAcLrTypsJ7xMkS92g1098O/BriLvdlURIlVOArHS1JoC9Zj
 zBJr5FOK/H50UAAAAPdmFncmFudEBzZXJ2ZXIxAQIDBA==
------END OPENSSH PRIVATE KEY-----" > /home/vagrant/.ssh/id_rsa
+-----END OPENSSH PRIVATE KEY-----" > /home/vagrant/.ssh/my-key
 
 eval `ssh-agent -s`
-ssh-add
+ssh-add /home/vagrant/.ssh/my-key
