@@ -1,47 +1,14 @@
 #!/bin/bash
 #add fix to exercise4-server1 here
-echo '192.168.60.11 server2' >> /etc/hosts
-#sudo ssh-keygen -t rsa -N "" -f /home/vagrant/.ssh/id_rsa
-#sudo ssh-copy-id -i /home/vagrant/.ssh/id_rsa.pub 192.168.60.11
-#sudo rm /home/vagrant/.ssh/id_rsa
-echo "-----BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
-NhAAAAAwEAAQAAAYEA0Wt39ZAU0aXZrjD+6rSlI3Zz54HceWUl+so2U7JFWPlrNVBoogJy
-6l6zwfykChOVnm9Iu30sPNPUVKSBzG8OvQcBTkHqkF3NITafmcslKhFHPUDNFsJ+CVpzKl
-0mKfhVdh9xevn5R1CLwWwDoCqeFndTzR7ex6DyE96QokAtV4Ed03YbFuYLdoK/FC6RpM43
-CJn5QQg0boQb647FRIhK2kHS6PnlCL/vdVqi5JHMysbLZq6O1TcdOx5+5cY5/OUoeJuSTW
-r1Df/I2KH607ck8YVrXGmV+NwUCy+BbhHYkRK/QXQGvEwGMYArJfpH0/XULLMeKuFcqjfU
-EiEU/4o4l58X0jEsaKD2a7pZmUFzblfjSzAshQ9VzpBxWRTbBPprFFmv2W5ZCj4jqN+V9d
-LnsCS+s2SxDqab1Lil2IAbh7RjDpAjRcoy4W5zXPu+s3h3eJsTWwdO7xoiTW33dyyqH8rh
-7ky3EmM/PCviwsDMY0vAiYGIC9ml3VoWCJIvv7QXAAAFiNHpmJPR6ZiTAAAAB3NzaC1yc2
-EAAAGBANFrd/WQFNGl2a4w/uq0pSN2c+eB3HllJfrKNlOyRVj5azVQaKICcupes8H8pAoT
-lZ5vSLt9LDzT1FSkgcxvDr0HAU5B6pBdzSE2n5nLJSoRRz1AzRbCfglacypdJin4VXYfcX
-r5+UdQi8FsA6AqnhZ3U80e3seg8hPekKJALVeBHdN2GxbmC3aCvxQukaTONwiZ+UEING6E
-G+uOxUSIStpB0uj55Qi/73VaouSRzMrGy2aujtU3HTsefuXGOfzlKHibkk1q9Q3/yNih+t
-O3JPGFa1xplfjcFAsvgW4R2JESv0F0BrxMBjGAKyX6R9P11CyzHirhXKo31BIhFP+KOJef
-F9IxLGig9mu6WZlBc25X40swLIUPVc6QcVkU2wT6axRZr9luWQo+I6jflfXS57AkvrNksQ
-6mm9S4pdiAG4e0Yw6QI0XKMuFuc1z7vrN4d3ibE1sHTu8aIk1t93csqh/K4e5MtxJjPzwr
-4sLAzGNLwImBiAvZpd1aFgiSL7+0FwAAAAMBAAEAAAGAHIxP8BPSIro/MHXRamFx2aG+Ly
-MO0SWuxb9nJIW62mQ17zCk8uDulXCPhLRSEGWXEeANxDFOJISj/13lq96/3Zjk3qwxs7h1
-zD9MBoUg7dkpIvqAesfMsq234WCNYU9PJykmKSOGjeg3BQkafW0R2/IsZFv+9qvEFF1Uzi
-l9hN4/GKKTEs4NZfxw2+l1RUgvTGbhCbJ6o04zGCuATNVfjt1GSSg3xreThyXx6sLNbh8n
-fznwkrROsc54cg5RvV3npVfJq8dLt/XsZcV2gsJe+WnXV2DerNP/78MWDSsHZ6MrMQFjnJ
-1oPpbvotzytdqqs8Yb4QJn077KLU1+Ru4RAzgyq4d1T3pkjOcXn7vwFR2dDUKJB7O3uW/6
-O+U6itLmnsXTtO5dzQebheTn/7Dzy0snwqhGmngt0t2amDEIvA1Ignxba9aulLffFR7TyU
-Avjg6mNTbg5Brtxm210XZzh5FUCzwL4wjrFisVh2ODrHJI9XJbvPIkYAxvSl+UHP3xAAAA
-wCfAFSvKN/xRxEQTbo8XpG1B0+PaeT9t5oRVUgjLl2F4n5WcQel8RQAb63Nb1db69wxyeY
-OcWFzcH13I9KeDiV/OKp42zjRIw+fjTuF4tKoFvqYvwLHJXAy3D/PlKXugHwkxopSqxBzJ
-u/fWR3ilc4oR3kBEXG0QZzTbxHVU2g5wtj9BHwDeTmOozsD7IWhDcgo6HwTSacP0HokQdr
-dnjxf/7CM6v1Ngm7qgqGVsB+OblDAtt2iHjqf3sQGuNVHy0wAAAMEA6bodVsLdbWvo3tzj
-quHUh7+7qJioKaCODOVzxKhTzMT6q4TII+jx0KDK/8jRsyuFrOO+NuT/xftKKkUvv90FK4
-FqKhBJpg7TfU7JKOfRrGgB+c3nC6NSXxk6QlWSNHlpD/S6IOfjG2+FO6CZEZMMN5PP/FUM
-EuyAZmibvQZTsrnVejaV83iBSmR8AktWCNlQk1LZGd6OSk8wHWZbQ5GgXggK5K5mvhkXXi
-6rPl3RByEeVW90Nrpvo0/1gxTFsmWrAAAAwQDlYF4cDUHiqlRvxf/UDDlS4esKLMtCv5le
-4hmTJTCPgW/gtNQsCySKKJw3Bn3mLkuQWWKdU4GQqXxSHp2K+JBl8vx29BpwDd242Kpu/L
-0tr9xr7gpEY7hTyz1lgWDEqCp8nb1OjvqQQ5ItRtefn4VitEMUXABevBrFRF0ndsYjjI+I
-3PbvzT1/s34PRdhcG+QQ8iRAcLrTypsJ7xMkS92g1098O/BriLvdlURIlVOArHS1JoC9Zj
-zBJr5FOK/H50UAAAAPdmFncmFudEBzZXJ2ZXIxAQIDBA==
------END OPENSSH PRIVATE KEY-----" > /home/vagrant/.ssh/my-key
+echo 'Host server2
+    HostName 192.168.60.11
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    IdentitiesOnly yes
+    User vagrant
+    IdentityFile /vagrant/.vagrant/machines/server2/virtualbox/private_key
+    PasswordAuthentication no' >> /home/vagrant/.ssh/config
 
-eval `ssh-agent -s`
-ssh-add /home/vagrant/.ssh/my-key
+chown vagrant /home/vagrant/.ssh/config
+chgrp vagrant /home/vagrant/.ssh/config
+chmod 600 /home/vagrant/.ssh/config
